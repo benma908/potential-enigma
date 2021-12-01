@@ -40,3 +40,20 @@ for i in range(n >> 1):
         tmp.append(a[j] + nums[i])
     a.extend(tmp)
 ```
+## C++ 读取输入列表 <=> Python3 input()
+- C++ 
+```cpp
+int n,a[101],run=0;
+    
+scanf("%d",&n);
+
+for(int i=1;i<=n;i++){
+    scanf("%d",&a[i]);
+    run+=a[i];
+}
+```
+- Python3
+```python
+n = int(input())
+a = list(map(int, input().split()))
+```
