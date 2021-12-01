@@ -56,4 +56,5 @@ for(int i=1;i<=n;i++){
 ```python
 n = int(input())
 a = list(map(int, input().split()))
+run = sum(a) // n 
 ```
