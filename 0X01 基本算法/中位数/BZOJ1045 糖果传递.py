@@ -11,8 +11,5 @@ c[1:] = sorted(c[1:])
 b1 = c[n + 1 >> 1]
 ans = 0
 for i in range(1, n + 1):
-    if (b1 - c[i]) > 0:
-        ans += b1 - c[i]
-    else:
-        ans += c[i] - b1
+    ans += abs(b1 - c[i])
 print(ans)
